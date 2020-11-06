@@ -4,7 +4,7 @@ class CommentsController < ApplicationController
     if @comment.save
       redirect_to prototype_path(params[:prototype_id])
     else
-      redirect_to root_path
+      redirect_to prototype_path(params[:prototype_id])
     end
   end
 
